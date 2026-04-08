@@ -1,0 +1,12 @@
+{
+  "name": "escudos-futebol-api",
+  "version": "1.0.0",
+  "description": "API para consultar escudos de times de futebol sul-americanos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
