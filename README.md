@@ -11,8 +11,8 @@ Retorna todos os times disponíveis.
 ```json
 [
   {
-    "name": "flamengo",
-    "image": "https://raw.githubusercontent.com/washingtonos/escudos-futebol-api/main/assets/badges/flamengo.svg"
+    "name": "sao-paulo",
+    "image": "https://raw.githubusercontent.com/washingtonos/escudos-futebol-api/main/assets/badges/sao-paulo.svg"
   }
 ]
 ```
@@ -27,8 +27,8 @@ GET /badges/palmeiras
 
 ```json
 {
-  "name": "palmeiras",
-  "image": "https://raw.githubusercontent.com/washingtonos/escudos-futebol-api/main/assets/badges/palmeiras.svg"
+  "name": "sao-paulo",
+  "image": "https://raw.githubusercontent.com/washingtonos/escudos-futebol-api/main/assets/badges/sao-paulo.svg"
 }
 ```
 
