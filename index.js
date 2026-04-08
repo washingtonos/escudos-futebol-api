@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const GITHUB_RAW_BASE =
-  "https://raw.githubusercontent.com/washingtonos/escudos-futebol-api/main/assets/badges";
+  "https://cdn.jsdelivr.net/gh/washingtonos/escudos-futebol-api@main/assets/badges";
 
 const BADGES_DIR = path.join(__dirname, "assets", "badges");
 

@@ -12,7 +12,7 @@ Retorna todos os times disponíveis.
 [
   {
     "name": "sao-paulo",
-    "image": "https://raw.githubusercontent.com/washingtonos/escudos-futebol-api/main/assets/badges/sao-paulo.svg"
+    "image": "https://cdn.jsdelivr.net/gh/washingtonos/escudos-futebol-api@main/assets/badges/sao-paulo.svg"
   }
 ]
 ```
@@ -28,7 +28,7 @@ GET /badges/palmeiras
 ```json
 {
   "name": "sao-paulo",
-  "image": "https://raw.githubusercontent.com/washingtonos/escudos-futebol-api/main/assets/badges/sao-paulo.svg"
+  "image": "https://cdn.jsdelivr.net/gh/washingtonos/escudos-futebol-api@main/assets/badges/sao-paulo.svg"
 }
 ```
 
