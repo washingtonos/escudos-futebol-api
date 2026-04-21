@@ -1,6 +1,7 @@
 # ⚽ Escudos Futebol API
 
 API leve para consultar escudos de times de futebol sul-americanos.
+Disponível em SVG e PNG (512x512).
 
 ## Endpoints
 
@@ -12,7 +13,8 @@ Retorna todos os times disponíveis.
 [
   {
     "name": "sao-paulo",
-    "image": "https://cdn.jsdelivr.net/gh/washingtonos/escudos-futebol-api@main/assets/badges/sao-paulo.svg"
+    "svg": "https://cdn.jsdelivr.net/gh/washingtonos/escudos-futebol-api@main/assets/badges/sao-paulo.svg",
+    "png": "https://cdn.jsdelivr.net/gh/washingtonos/escudos-futebol-api@main/assets/badges-png/sao-paulo.png"
   }
 ]
 ```
@@ -27,8 +29,9 @@ GET /badges/palmeiras
 
 ```json
 {
-  "name": "sao-paulo",
-  "image": "https://cdn.jsdelivr.net/gh/washingtonos/escudos-futebol-api@main/assets/badges/sao-paulo.svg"
+  "name": "palmeiras",
+  "svg": "https://cdn.jsdelivr.net/gh/washingtonos/escudos-futebol-api@main/assets/badges/palmeiras.svg",
+  "png": "https://cdn.jsdelivr.net/gh/washingtonos/escudos-futebol-api@main/assets/badges-png/palmeiras.png"
 }
 ```
 
@@ -40,3 +43,11 @@ npm start
 ```
 
 A API sobe em `http://localhost:3000`.
+
+## Converter SVGs para PNG
+
+```bash
+npm run convert-png
+```
+
+Gera os PNGs em `assets/badges-png/` (512x512, fundo transparente).

@@ -5,19 +5,20 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const GITHUB_RAW_BASE =
-  "https://cdn.jsdelivr.net/gh/washingtonos/escudos-futebol-api@main/assets/badges";
+const CDN_BASE =
+  "https://cdn.jsdelivr.net/gh/washingtonos/escudos-futebol-api@main/assets";
 
 const BADGES_DIR = path.join(__dirname, "assets", "badges");
 
 function loadBadges() {
-  const files = fs.readdirSync(BADGES_DIR).filter((f) => /\.(svg|png)$/i.test(f));
+  const files = fs.readdirSync(BADGES_DIR).filter((f) => /\.svg$/i.test(f));
 
   return files.map((file) => {
     const name = path.parse(file).name;
     return {
       name,
-      image: `${GITHUB_RAW_BASE}/${file}`,
+      svg: `${CDN_BASE}/badges/${file}`,
+      png: `${CDN_BASE}/badges-png/${name}.png`,
     };
   });
 }
